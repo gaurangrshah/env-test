@@ -16,8 +16,8 @@ export const serverSchema = z.object({
     // VERCEL_URL doesnt include `https` so it cant be validated as a URL
     process.env.VERCEL ? z.string() : z.string().url()
   ),
-  SPOTIFY_CLIENT_ID: z.string(),
-  SPOTIFY_CLIENT_SECRET: z.string(),
+  DISCORD_CLIENT_ID: z.string(),
+  DISCORD_CLIENT_SECRET: z.string(),
   SMTP_HOST: z.string(),
   SMTP_PORT: z.string(),
   SMTP_PASS: z.string(),
