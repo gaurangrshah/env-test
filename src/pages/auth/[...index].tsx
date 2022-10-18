@@ -41,7 +41,6 @@ const AuthPage: React.FC<AuthPageProps> = ({
   const [signInView, setSignInView] = useState<SignView>('magic');
 
   const { asPath } = router;
-2020
 
 
   // routing booleans
