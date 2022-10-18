@@ -7,7 +7,6 @@ import { serverSchema } from './schema.mjs';
 import { env as clientEnv, formatErrors } from './client.mjs';
 
 const _serverEnv = serverSchema.safeParse(process.env);
-console.log('🚀 | file: server.mjs | line 10 | _serverEnv', _serverEnv);
 
 if (!_serverEnv.success) {
   console.error(
